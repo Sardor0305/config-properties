@@ -1,0 +1,27 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/account
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+  application:
+    name: account
+
+
+
+jwt:
+  token:
+    secret:
+      expiry-mills: 600000
+      key: SnZUTgGz6u+8PL2auyKJEScKO4XxfPLIvd0WIHrdpLItlVWFQgwWeyzWcgpKMamLWQLF7IsgAPgBqT0Z1otp8Q==
+
+springdoc:
+  swagger-ui:
+    path: /swagger
+    url:
